@@ -3,42 +3,26 @@
 
 void ft_putchar(char c);
 
-void rush(int x, int y) {
-    char canto_esquerdo = '/';
-    char canto_direito = '\\';
-    char borda = '*';
-    char espaco = ' ';
-
+void rush(int x, int y)
+{
     int a = 0;
+    if (x > 0 && y > 0)
+    {
     while (a < y) {
         int l = 0;
         while (l < x) {
-            if (a == 0) {
-                if (l == 0) {
-                    ft_putchar (canto_esquerdo);
-                } else if (l == x - 1) {
-                    ft_putchar(canto_direito);
-                } else {
-                    ft_putchar(borda);
-                }
-            } else if (a == y - 1) {
-                if (l == 0) {
-                    ft_putchar(canto_direito);
-                } else if (l == x - 1) {
-                    ft_putchar(canto_esquerdo);
-                } else {
-                    ft_putchar(borda);
-                }    
-            } else {
-                if (l == 0 || l == x - 1) {
-                    ft_putchar(borda);
-                } else {
-                    ft_putchar(espaco);
-                }
-            }
+            if ((a == 0 && l == 0) || (a == y - 1 && l == x - 1))
+                ft_putchar ('/');
+            else if ((a == y - 1 && l == 0) || (a == 0 && l == x - 1))
+                ft_putchar('\\');
+            else if (a == 0 || l == 0 || a == y - 1 || l == x - 1)
+                ft_putchar('*');
+            else
+                ft_putchar(' ');
             l++;
         }
-        write(STDOUT_FILENO, "\n", 1);
+        ft_putchar ('\n');
         a++;
+    }
     }
 }
