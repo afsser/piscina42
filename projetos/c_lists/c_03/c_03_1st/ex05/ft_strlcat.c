@@ -6,7 +6,7 @@
 /*   By: fcaldas- <fcaldas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:21:55 by fcaldas-          #+#    #+#             */
-/*   Updated: 2023/06/08 20:25:12 by fcaldas-         ###   ########.fr       */
+/*   Updated: 2023/06/13 19:46:11 by fcaldas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int	main(void)
 	char			*dest;
 	char			src_arr[] = "wooorld";
 	char			dest_arr[] = "hellooo ";
-	unsigned int	size = 10;
+	unsigned int	size = 4;
 	char			control_src[] = "wooorld";
 	char			control_dest[] = "hellooo ";
 

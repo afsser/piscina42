@@ -6,7 +6,7 @@
 /*   By: fcaldas- <fcaldas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:22:05 by fcaldas-          #+#    #+#             */
-/*   Updated: 2023/06/08 14:25:29 by fcaldas-         ###   ########.fr       */
+/*   Updated: 2023/06/13 19:34:59 by fcaldas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,19 @@ int	ft_strcmp(char *s1, char *s2)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main(void)
-// {
-// 	char			*s1;
-// 	char			*s2;
-// 	char			str1[] = "natalí";
-// 	char			str2[] = "natali";
+int main(void)
+{
+	char			*s1;
+	char			*s2;
+	char			str1[] = "1";
+	char			str2[] = "5";
 
-// 	s1 = str1;
-// 	s2 = str2;
-// 	printf("o retorno é: %d\n", ft_strcmp(s1, s2));
-// 	printf("a strncmp retorna: %d\n", strcmp(s1, s2));
-// 	return (0);
-// }
+	s1 = str1;
+	s2 = str2;
+	printf("o retorno é: %d\n", ft_strcmp(s1, s2));
+	printf("a strncmp retorna: %d\n", strcmp(s1, s2));
+	return (0);
+}

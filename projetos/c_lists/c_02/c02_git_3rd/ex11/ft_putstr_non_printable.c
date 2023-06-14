@@ -6,7 +6,7 @@
 /*   By: fcaldas- <fcaldas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 15:55:50 by fcaldas-          #+#    #+#             */
-/*   Updated: 2023/06/07 15:40:56 by fcaldas-         ###   ########.fr       */
+/*   Updated: 2023/06/12 12:56:06 by fcaldas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	char_to_hex(char ch)
 	char	conteudo_hex_1;
 
 	hex_chars = "0123456789abcdef";
-	hex[0] = hex_chars[(ch / 16) % 16];
-	hex[1] = hex_chars[ch % 16];
+	hex[0] = hex_chars[((unsigned char)ch / 16) % 16];
+	hex[1] = hex_chars[(unsigned char)ch % 16];
 	hex[2] = '\0';
 	write(1, hex, 1);
 	conteudo_hex_1 = hex[1];
