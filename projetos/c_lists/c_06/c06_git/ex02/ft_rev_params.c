@@ -6,7 +6,7 @@
 /*   By: fcaldas- <fcaldas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 16:02:05 by fcaldas-          #+#    #+#             */
-/*   Updated: 2023/06/13 16:03:46 by fcaldas-         ###   ########.fr       */
+/*   Updated: 2023/06/15 17:24:16 by fcaldas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main(int argc, char **argv)
 {
 	int	j;
 
-	while (argc > 0)
+	while (argc > 1)
 	{	
 		j = 0;
 		while (argv[argc - 1][j])

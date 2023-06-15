@@ -6,7 +6,7 @@
 /*   By: fcaldas- <fcaldas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/13 15:42:45 by fcaldas-          #+#    #+#             */
-/*   Updated: 2023/06/13 15:46:38 by fcaldas-         ###   ########.fr       */
+/*   Updated: 2023/06/15 17:23:11 by fcaldas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main(int argc, char **argv)
 	int	i;
 
 	i = 0;
+	(void)argc;
 	while (argv[0][i])
 	{
 		i++;
